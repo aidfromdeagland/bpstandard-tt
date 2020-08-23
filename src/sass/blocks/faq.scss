@@ -1,0 +1,33 @@
+.faq {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 235px 10px 0;
+  font-family: "Raleway", "Arial" , sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  &__header {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    text-transform: uppercase;
+  }
+
+  &__subheader {
+    color: var(--color-text);
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__content-image {
+    position: absolute;
+    top: 25px;
+    right: 12px;
+  }
+}

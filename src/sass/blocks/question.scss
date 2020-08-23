@@ -1,0 +1,36 @@
+.question {
+  margin-top: 43px;
+  padding-left: 80px;
+
+  &:first-of-type {
+    margin-top: 30px;
+  }
+
+  & > *:not(.question__header) {
+    display: none;
+  }
+
+  &_active {
+    & > *:not(.question__header) {
+      display: block;
+    }
+  }
+
+  &__header {
+    min-height: 70px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__text {
+
+  }
+}
