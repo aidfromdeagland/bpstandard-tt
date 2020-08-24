@@ -3,11 +3,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 235px 10px 0;
-  font-family: "Raleway", "Arial" , sans-serif;
+  padding: 235px 10px 165px;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-variation-settings: 'wght' 500;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background: var(--color-bg) url("./../img/broccoli_s.png") no-repeat center;
+  background-position: top 25px right 12px;
 
   &__header {
     position: absolute;
@@ -18,16 +21,28 @@
   }
 
   &__subheader {
+    margin: 19px 0 18px;
     color: var(--color-text);
-    font-size: 19px;
+    font-size: 20px;
     line-height: 23px;
+    font-variation-settings: 'wght' 600;
     text-transform: uppercase;
     text-align: center;
   }
 
+  /* For content (not decorative) images cases
   &__content-image {
     position: absolute;
     top: 25px;
     right: 12px;
+  }
+  */
+}
+
+@media (min-width: 768px) {
+  .faq {
+    padding: 275px 10px 165px;
+    background: var(--color-bg) url("./../img/broccoli_m.png") no-repeat center;
+    background-position: top 5px right;
   }
 }
