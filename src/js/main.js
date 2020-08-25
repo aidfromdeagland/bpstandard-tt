@@ -1,5 +1,3 @@
-console.log('INTERACTED');
-
 const questionsBlock = document.querySelector('.faq__questions')
 const questions = questionsBlock.querySelectorAll('.question');
 questionsBlock.addEventListener('click', (evt) => {
