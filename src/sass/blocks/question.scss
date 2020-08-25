@@ -21,8 +21,6 @@
     border: 1px solid var(--color-accent);
     border-radius: 50%;
     background-color: transparent;
-    transform-origin: center;
-    transition: all 1s;
 
     &:focus {
       outline: none;
@@ -36,6 +34,8 @@
       width: 21px;
       height: 2px;
       background-color: var(--color-accent);
+      transform-origin: center;
+      transition: all 1s;
     }
 
     &:hover {
@@ -67,14 +67,21 @@
   }
 
   &_active {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 
     .question__toggler {
-      transform: rotate(45deg);
       background-color: var(--color-accent);
 
       &:before, &:after {
         background-color: var(--color-bg);
+      }
+
+      &:before {
+        transform: translateX(-50%) rotate(-45deg);
+      }
+
+      &:after {
+        transform: translateX(-50%) rotate(45deg);
       }
 
       &:hover {
@@ -134,8 +141,8 @@
       height: 70px;
 
       &:before, &:after {
-        width: 26px;
-        height: 2.5px;
+        width: 25px;
+        height: 3px;
       }
     }
 
@@ -151,3 +158,19 @@
     }
   }
 }
+
+@media (min-width: 1920px) {
+  .question {
+    margin-bottom: 45px;
+    padding-left: 100px;
+
+    &:last-of-type {
+      margin-top: 0;
+    }
+
+    &_active {
+      margin-bottom: 48px;
+    }
+  }
+}
+

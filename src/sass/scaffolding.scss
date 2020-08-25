@@ -27,6 +27,32 @@ a {
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.block-container {
+  width: 300px;
+  margin: 25px auto 165px;
+}
+
+@media (min-width: 768px) {
+  .block-container {
+    width: 748px;
+    margin: 5px auto 306px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .block-container {
+    width: 1438px;
+    margin: 150px auto;
+  }
+}
+
 
 
 

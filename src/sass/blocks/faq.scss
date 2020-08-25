@@ -2,22 +2,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  padding: 235px 10px 166px;
+  padding-top: 210px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-feature-settings: 'pnum' on, 'lnum' on;
   font-variation-settings: 'wght' 500;
   color: var(--color-text);
-  background: var(--color-bg) url("./../img/broccoli_s.png") no-repeat center;
-  background-position: top 25px right 12px;
+  background: var(--color-bg) url("./../img/broccoli_s.png") no-repeat top right 2px;
 
   &__header {
-    position: absolute;
-    width: 0;
-    height: 0;
-    visibility: hidden;
+    font-size: 30px;
+    line-height: 35px;
     text-transform: uppercase;
+    font-variation-settings: 'wght' 800;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f6f6f6;
   }
 
   &__subheader {
@@ -28,6 +28,7 @@
     font-variation-settings: 'wght' 600;
     text-transform: uppercase;
     text-align: center;
+    word-spacing: -0.5px;
   }
 
   /* For content (not decorative) images cases
@@ -41,13 +42,38 @@
 
 @media (min-width: 768px) {
   .faq {
-    padding: 275px 90px 306px 10px;
-    background: var(--color-bg) url("./../img/broccoli_m.png") no-repeat center;
-    background-position: top 5px right;
+    padding: 270px 80px 0 0;
+    background: var(--color-bg) url("./../img/broccoli_m.png") no-repeat top right -10px;
     font-feature-settings: 'pnum' off, 'lnum' off;
+
+    &__header {
+      font-size: 80px;
+      line-height: 94px;
+    }
 
     &__subheader {
       margin: 19px -85px 15px 0;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .faq {
+    padding: 135px 767px 66px 0;
+    background: var(--color-bg) url("./../img/broccoli_l.png") no-repeat center;
+    background-position: top 188px right;
+    font-feature-settings: 'pnum', 'lnum';
+
+    &__header {
+      font-size: 130px;
+      line-height: 153px;
+    }
+
+    &__subheader {
+      margin: 30px -500px 45px 0;
+      font-size: 30px;
+      line-height: 35px;
+      word-spacing: -0.5px;
     }
   }
 }
