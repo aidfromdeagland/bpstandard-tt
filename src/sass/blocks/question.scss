@@ -116,7 +116,17 @@
 
 @media (min-width: 768px) {
   .question {
-    padding-left: 90px;
+    margin-bottom: 46px;
+    padding-left: 100px;
+
+    &:last-of-type {
+      margin-top: -6px;
+    }
+
+
+    &_active {
+      margin-bottom: 24px;
+    }
 
     &__toggler {
       position: absolute;
@@ -124,8 +134,19 @@
       height: 70px;
 
       &:before, &:after {
-        width: 27px;
-        height: 2px;
+        width: 26px;
+        height: 2.5px;
+      }
+    }
+
+    &__paragraph {
+      margin: 0;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.2px;
+
+      &:not(:first-of-type) {
+        margin-top: 12px;
       }
     }
   }

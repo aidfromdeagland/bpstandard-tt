@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 235px 10px 165px;
+  padding: 235px 10px 166px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-feature-settings: 'pnum' on, 'lnum' on;
@@ -41,8 +41,13 @@
 
 @media (min-width: 768px) {
   .faq {
-    padding: 275px 10px 165px;
+    padding: 275px 90px 306px 10px;
     background: var(--color-bg) url("./../img/broccoli_m.png") no-repeat center;
     background-position: top 5px right;
+    font-feature-settings: 'pnum' off, 'lnum' off;
+
+    &__subheader {
+      margin: 19px -85px 15px 0;
+    }
   }
 }
